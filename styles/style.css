@@ -3,11 +3,12 @@
 }
 nav {
   padding: 20px 0;
+  font-family: "Tilt Prism", cursive;
 }
 
 nav ul {
-  padding: 0;
   margin: 0;
+  padding-top: 20px;
 }
 
 nav li {
@@ -15,6 +16,7 @@ nav li {
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
+  font-size: 25px;
 }
 
 nav a {
