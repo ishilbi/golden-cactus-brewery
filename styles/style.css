@@ -1,11 +1,15 @@
+body {
+  background-color: black;
+}
 nav {
-  font-family: "Playfair Display", serif;
   color: #f0de36;
   padding: 20px 50px;
+  font-family: "Tektur", cursive;
 }
 
 nav ul {
   margin: 0;
+  padding-top: 30px;
   padding-bottom: 150px;
 }
 
@@ -25,20 +29,18 @@ nav a {
 
 nav a:hover,
 nav li.active a {
-  color: var(--branding-color);
+  color: #f0de36;
 }
 .logo {
-  max-height: 90px;
+  max-height: 130px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("/images/gcb-3.jpeg");
   background-size: cover;
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  font-family: "Orbitron", sans-serif;
   padding-top: 20px;
   padding-bottom: 250px;
 }
@@ -46,16 +48,72 @@ h1 {
   font-weight: 900;
   font-size: 60px;
   color: #f6f4eb;
+  font-family: "Ruwudu", serif;
 }
 h2 {
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 50px;
   color: #f0de36;
+  font-family: "Tilt Prism", cursive;
 }
 p {
   padding: 30px 30px;
   line-height: 25px;
   font-size: 15px;
   text-align: justify;
+}
+.beer-title {
+  font-size: 50px;
+  color: #f0de36;
+  font-family: "Tilt Prism", cursive;
+  font-weight: 500;
+}
+.body-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("/images/beer-tap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 700px;
+  height: 200px;
+  background-color: #b9b4c7;
+  opacity: 0.7;
+  border-radius: 10px;
+  text-align: center;
+}
+.beer-name {
+  font-family: "Tektur", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: #141e46;
+}
+.beer-description {
+  font-family: "Tektur", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: #141e46;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .logo {
+    max-height: 90px;
+  }
+  nav li {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
 }
