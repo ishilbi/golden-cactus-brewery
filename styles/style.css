@@ -7,6 +7,14 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-gap: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 50px 30px;
+}
 nav {
   color: #f0de36;
   padding: 30px 70px;
@@ -144,6 +152,67 @@ main .beer-description {
   color: #141e46;
   text-align: center;
   padding-bottom: 10px;
+}
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("/images/pinball-machines.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 30px;
+  opacity: 0.6;
+  font-family: "Tilt Prism", cursive;
+}
+footer .work-hours {
+  padding: 0;
+}
+footer .work-days {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+  line-height: 1.6;
+}
+
+footer .social-links a {
+  margin: 0;
+  color: #6c63ff;
+  background: #f9f7fe;
+  padding: 10px 14px;
+
+  border-radius: 30%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-facebook {
+  list-style: none;
+  opacity: 0.6;
+}
+footer .social-icons {
+  list-style: none;
+  opacity: 0.6;
+  padding-top: 25px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: #6c63ff;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
 }
 
 @media (max-width: 900px) {
