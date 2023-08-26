@@ -15,6 +15,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,94 +30,135 @@
       src="https://kit.fontawesome.com/df7c84af32.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="index.js" />
     <title>Golden Cactus Brewery</title>
   </head>
   <body>
-    <header>
-      <div class="container-nav">
-        <nav class="d-flex navbar-light bg-transparent justify-content-between">
-          <a href="/" title="Homepage">
-            <img
-              src="/images/gcb-logo.png"
-              class="logo d-none d-md-block"
-              alt="Golden Cactus Brewing Logo" />
-            <img
-              src="/images/gcb-logo.png"
-              class="logo d-block d-md-none"
-              alt="Golden Cactus Logo"
-          /></a>
+    <header class="wrapper">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="/images/gcb-logo.png"
+            class="logo d-none d-md-block"
+            alt="Golden Cactus Brewing Logo" />
+          <img
+            src="/images/gcb-logo.png"
+            class="logo d-block d-md-none"
+            alt="Golden Cactus Logo"
+        /></a>
+        <ul class="d-none d-lg-flex">
+          <li class="active">
+            <a href="/" title="Homepage Link"> Home</a>
+          </li>
+          <li>
+            <a href="/events.html" title="Golden Cactus Beer Menu">Events</a>
+          </li>
+          <li>
+            <a href="/about-us.html" title="About Golden Cactus Brewing"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="/merch.html" title="Golden Cactus Merch">Merch</a>
+          </li>
+        </ul>
 
-          <ul>
-            <li class="active">
-              <a href="/" title="Homepage Link"> Home</a>
-            </li>
-            <li>
-              <a href="/beer.html" title="Golden Cactus Beer Menu">Beer</a>
-            </li>
-            <li>
-              <a href="/about-us.html" title="About Golden Cactus Brewing"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="/merch.html" title="Golden Cactus Merch">Merch</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="dropdown d-lg-none">
+          <button
+            class="btn dropdown-toggle custom-button"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/events.html">Events</a>
+            <a class="dropdown-item" href="/about-us.html">About Us</a>
+            <a class="dropdown-item" href="/merch.html">Merch</a>
+          </div>
+        </div>
+      </nav>
+
       <h2>Stay Golden</h2>
       <h1>GOLDEN CACTUS BREWING</h1>
     </header>
-    <div class="body-content">
-      <div class="text-center m-3 pt-5 pb-3 beer-title">Our Featured Beers</div>
-
-      <div class="box-container">
-        <div class="box">
-          <div class="beer-name">PICKLE RICK 🥒</div>
-          <div class="beer-description">
-            Dry Hopped, Kettle Sour Beer with Pickling Spices. <br />
-            <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
+    <main>
+      <section class="main-image-wrapper">
+        <div class="text-center m-3 pt-4 pb-4 beer-title">
+          Our Featured Beers
+        </div>
+        <div class="grid grid-2-columns">
+          <div class="image-container">
+            <img
+              src="/images/gcb-logo-2.png"
+              class="golden-cactus-secondary-logo"
+              alt="Golden Cactus Secondary Logo"
+            />
           </div>
+          <div class="box-container">
+            <div class="box">
+              <div class="beer-name">PICKLE RICK 🥒</div>
+              <div class="beer-description">
+                Dry Hopped, Kettle Sour Beer with Pickling Spices. <br />
+                <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">SHNOOKY 🍺</div>
-          <div class="beer-description">
-            Hop Tub West Coast IPA <br />
-            <strong>ABV:</strong> 7.7% <strong>IBU:</strong> 10
-          </div>
+              <div class="beer-name">SHNOOKY 🍺</div>
+              <div class="beer-description">
+                Hop Tub West Coast IPA <br />
+                <strong>ABV:</strong> 7.7% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">RICK RITA 🍻</div>
-          <div class="beer-description">
-            Tart Ale Soured with Key Lime and Orange Oil <br />
-            <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
-          </div>
+              <div class="beer-name">RICK RITA 🍻</div>
+              <div class="beer-description">
+                Tart Ale Soured with Key Lime and Orange Oil <br />
+                <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">AMBER 📼</div>
-          <div class="beer-description">
-            90's Amber Ale <br />
-            <strong>ABV:</strong> 6% <strong>IBU:</strong> 10
-          </div>
+              <div class="beer-name">AMBER 📼</div>
+              <div class="beer-description">
+                90's Amber Ale <br />
+                <strong>ABV:</strong> 6% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">URSULA 💜</div>
-          <div class="beer-description">
-            Fruit Beer with Plum Cherry <br />
-            <strong>ABV:</strong> 5.5% <strong>IBU:</strong> 10
-          </div>
+              <div class="beer-name">URSULA 💜</div>
+              <div class="beer-description">
+                Fruit Beer with Plum Cherry <br />
+                <strong>ABV:</strong> 5.5% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">PILS R GÜD 🇮🇹</div>
-          <div class="beer-description">
-            ITALIAN PILSNER <br />
-            <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
-          </div>
+              <div class="beer-name">PILS R GÜD 🇮🇹</div>
+              <div class="beer-description">
+                ITALIAN PILSNER <br />
+                <strong>ABV:</strong> 5% <strong>IBU:</strong> 10
+              </div>
 
-          <div class="beer-name">PSIDIUM 🍈</div>
-          <div class="beer-description">
-            Guava Saison<br />
-            <strong>ABV:</strong> 7% <strong>IBU:</strong> 10
+              <div class="beer-name">PSIDIUM 🍈</div>
+              <div class="beer-description">
+                Guava Saison<br />
+                <strong>ABV:</strong> 7% <strong>IBU:</strong> 10
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    y
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
